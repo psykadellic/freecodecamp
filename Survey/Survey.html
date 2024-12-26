@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey HTML</title>
+</head>
+<body>
+    <h1 id="title">Spider-Man Survey</h1>
+    <p id="description">Participate in our quick survey about Spider-Man to share your thoughts and preferences on this iconic Marvel character and contribute to our understanding of the fandom. Thank you for joining!   </p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name<input id="name" type="text"  placeholder="Enter your name" required></label>
+            <label id="email-label">Email<input id="email" type='email' placeholder="Enter your email" required></label>
+            <label id="number-label">Age<input id="number" type="number" min="10" max="99" placeholder="Age"></label>
+        </fieldset>
+        <fieldset>
+            Are you Spider-Man?
+            <label for="Yes"><input id="Tobey" type="radio" name="Spider-Man" value="yes" class="inline">Yes</label>
+            <label for="No"><input id="Andrew" type="radio" name="Spider-Man" value="no" class="inline">No</label>
+            <label for="training">
+                <input id="training" type="checkbox" required name="training" value="training" class="inline" /> I need proper training</a>
+            </label>
+            <label for="invitation">
+                <input id="invitation" type="checkbox" required name="invitation" value="invitation" class="inline" /> I would like an invite to the Spider Society</a>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label id="referrer"> Which Spider-Man is the best?
+                <select id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Tobey Maguire</option>
+                    <option value="2">Andrew Garfield</option>
+                    <option value="3">Tom Holland</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+            <label for="bio">Talk about Spider-Man:
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Spider-Man is a menace"></textarea>
+              </label>
+        </fieldset>
+        <input id="submit" type="submit" value="submit">
+    </form>
+</body>
+</html>
